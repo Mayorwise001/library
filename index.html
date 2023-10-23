@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Library Project</h1>
+    <div id="newBtn-container">
+        <button id="newBtn">+New Book</button>
+    </div>
+
+    <div id="popUp">
+        <form action="/index.js" id="form">
+            <span class="close">&times;</span>
+            <ledgend style="color:rgb(255, 255, 255)">New Book</ledgend>
+            <div id="textInput">
+                <p><input type="text" id="title" name="title" placeholder="title"></p>
+                <p><input type="text" id="author" name="author" placeholder="author"></p>
+                <p><input type="text" id="pages" name="pages" placeholder="pages"></p>
+            </div>
+            <div id="checkBox">
+                <p><label for="" style="color: white">Read?</label> <input type="checkbox" id="read" name="read" value="yes"></p>
+            </div>
+
+            <button type="submit" form="form" id="addBtn">Add</button>
+        </form>
+    </div>
+    <div id="Library-container"></div>
+</body>
+
+<script src="index.js"></script>
+</html>
